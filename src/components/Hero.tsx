@@ -51,7 +51,7 @@ const Hero = () => {
           <p 
             className="reveal-animation delay-300 animate-fade-in-up text-lg md:text-xl text-white/90 mt-6 mb-8 leading-relaxed"
           >
-            P2GS is your trusted partner in Project Management for Construction and Telecom Digital Transformation across Europe, Africa, and the Middle East.
+            P2GS is your trusted partner in Consultancy and Project Management for Construction and Telecom Digital Transformation across Europe, Africa, and the Middle East.
           </p>
           <div className="reveal-animation delay-500 animate-fade-in-up">
             <a
