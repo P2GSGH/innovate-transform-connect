@@ -50,8 +50,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-p2gs-navy font-heading font-bold text-2xl">
-            P2GS
+          <a href="#" className="flex items-center">
+            <img 
+              src="/lovable-uploads/52b7d543-2749-4e2c-a4b2-5572419bc67b.png" 
+              alt="P2GS Logo" 
+              className="h-10 md:h-12"
+            />
           </a>
 
           {/* Desktop Navigation */}
