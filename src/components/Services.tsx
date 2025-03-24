@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from "react";
-import { Building2, Wifi } from "lucide-react";
+import { Building2, Wifi, Building } from "lucide-react";
 
 const Services = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ const Services = () => {
           <h2 className="section-title reveal-animation animate-fade-in-up">What We Do</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="reveal-animation animate-fade-in-up delay-200">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:translate-y-[-5px] h-full flex flex-col">
               <div className="bg-p2gs-navy p-6 flex items-center">
@@ -109,6 +109,44 @@ const Services = () => {
                   <li className="flex items-start">
                     <span className="text-p2gs-blue font-bold mr-2">•</span>
                     <span className="text-gray-700">Performance monitoring and enhancement</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="reveal-animation animate-fade-in-up delay-600">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:translate-y-[-5px] h-full flex flex-col">
+              <div className="bg-p2gs-lightblue p-6 flex items-center">
+                <div className="bg-white/10 p-4 rounded-full mr-4">
+                  <Building className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white">Telecom Solutions</h3>
+              </div>
+              <div className="p-6 flex-1">
+                <p className="text-gray-700 mb-4">
+                  We design and deploy advanced telecom infrastructure for smart buildings and city-wide networks, creating connected and efficient environments.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="text-p2gs-blue font-bold mr-2">•</span>
+                    <span className="text-gray-700">Smart building connectivity solutions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-p2gs-blue font-bold mr-2">•</span>
+                    <span className="text-gray-700">IoT network integration</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-p2gs-blue font-bold mr-2">•</span>
+                    <span className="text-gray-700">Urban connectivity planning</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-p2gs-blue font-bold mr-2">•</span>
+                    <span className="text-gray-700">Smart city infrastructure deployment</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-p2gs-blue font-bold mr-2">•</span>
+                    <span className="text-gray-700">Sustainable communication networks</span>
                   </li>
                 </ul>
               </div>
