@@ -60,12 +60,20 @@ const Geography = () => {
           <div className="reveal-animation animate-fade-in-up delay-200">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-radial from-p2gs-lightblue/30 to-transparent opacity-70 rounded-full blur-3xl"></div>
-              <img 
-                src="/assets/world-map.svg" 
-                alt="World Map with Europe, Middle East and Africa Highlighted" 
-                className="w-full h-auto relative z-10"
-                style={{ filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1))" }}
-              />
+              <div className="relative z-10 overflow-hidden rounded-lg shadow-xl">
+                <img 
+                  src="/assets/world-map.svg" 
+                  alt="World Map with Europe, Middle East and Africa Highlighted" 
+                  className="w-full h-auto object-contain max-w-full"
+                  style={{ 
+                    filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1))",
+                    minHeight: "350px"
+                  }}
+                />
+              </div>
+              <div className="absolute bottom-2 right-2 bg-white/80 text-xs text-gray-500 px-2 py-1 rounded z-20">
+                Europe, Middle East & Africa
+              </div>
             </div>
           </div>
 
