@@ -65,7 +65,11 @@ const Geography = () => {
                   src="/lovable-uploads/bca081e6-7fdb-4deb-b74a-53f316217484.png" 
                   alt="World Map showing our global presence" 
                   className="w-full h-auto object-contain rounded-lg"
-                  style={{ minHeight: "350px" }}
+                  style={{ 
+                    minHeight: "350px",
+                    filter: "hue-rotate(20deg) saturate(80%) brightness(105%)",
+                    mixBlendMode: "multiply"
+                  }}
                 />
               </div>
               <div className="absolute bottom-2 right-2 bg-white/80 text-xs text-gray-500 px-2 py-1 rounded z-20">
@@ -84,7 +88,7 @@ const Geography = () => {
                 <div 
                   key={region.name}
                   className="bg-white rounded-lg shadow-md overflow-hidden border-l-4 transition-all duration-300 hover:shadow-lg"
-                  style={{ borderLeftColor: region.name === "Europe" ? "#0A2342" : region.name === "Middle East" ? "#126E82" : "#51C4D3" }}
+                  style={{ borderLeftColor: region.name === "Europe" ? "#9F9EA1" : region.name === "Middle East" ? "#33C3F0" : "#51C4D3" }}
                 >
                   <div className="p-5">
                     <h3 className="text-lg font-bold text-p2gs-navy mb-2">{region.name}</h3>
